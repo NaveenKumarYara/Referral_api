@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  referralapi:
+    image: ${DOCKER_REGISTRY-}referralapi
+    build:
+      context: .
+      dockerfile: Dockerfile
